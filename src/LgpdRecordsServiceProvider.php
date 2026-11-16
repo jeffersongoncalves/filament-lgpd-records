@@ -2,17 +2,17 @@
 
 namespace JeffersonGoncalves\Filament\LgpdRecords;
 
+use JeffersonGoncalves\FilamentPluginCore\BasePackageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class LgpdRecordsServiceProvider extends PackageServiceProvider
+class LgpdRecordsServiceProvider extends BasePackageServiceProvider
 {
+    public static string $name = 'filament-lgpd-records';
+
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('filament-lgpd-records')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigrations();
+            ->name(static::$name)
+            ->hasTranslations();
     }
 }
