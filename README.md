@@ -20,7 +20,7 @@ Manage the records of processing activities (ROPA, LGPD art. 37) of [laravel-lgp
 - Link activities to the models of `lgpd.models`: the personal data declared on them joins the record.
 - Recipients (processor, shared controller, public authority) and international transfers with their legal mechanism (art. 33).
 - **Export ROPA (JSON):** controller, data protection officer and every activity, in one file.
-- English and Brazilian Portuguese.
+- 19 languages.
 
 ## Compatibility
 
